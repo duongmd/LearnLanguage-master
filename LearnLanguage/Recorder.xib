@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Recorder" customModule="LearnLanguage" customModuleProvider="target">
+            <connections>
+                <outlet property="tbvRecorder" destination="b1l-O6-0Oz" id="ME4-Pd-nYF"/>
+                <outlet property="view" destination="xzU-FO-Eqq" id="gbQ-nn-LG1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="xzU-FO-Eqq">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b1l-O6-0Oz">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ARJ-Vk-O2r"/>
+                        <outlet property="delegate" destination="-1" id="alF-Q6-ZRc"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.3824533356" blue="0.3618167565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="b1l-O6-0Oz" firstAttribute="top" secondItem="xzU-FO-Eqq" secondAttribute="top" id="8WU-oa-o9l"/>
+                <constraint firstAttribute="trailing" secondItem="b1l-O6-0Oz" secondAttribute="trailing" id="ewC-yL-Vij"/>
+                <constraint firstAttribute="bottom" secondItem="b1l-O6-0Oz" secondAttribute="bottom" id="j6l-aH-sBE"/>
+                <constraint firstItem="b1l-O6-0Oz" firstAttribute="leading" secondItem="xzU-FO-Eqq" secondAttribute="leading" id="whV-l6-asb"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
